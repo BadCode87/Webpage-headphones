@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap');
+@import 'mediaqueries.css';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+
+.hero {
+    width:100vw;
+    background-image: url(../img/vector-1.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    padding: 30px;
+}
+
+.navbar .brand {
+    color: #f7b733;
+    padding-left: 25px;
+}
+
+.navbar .menu {
+    grid-column: 6 / 9;
+    display: flex;
+    margin-top: 12px;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    margin-right: 3em;
+    font-size: 1.3em;
+    color: #fff;
+    font-weight: 200;
+    padding: 10px 20px;
+
+}
+
+.menu li a:hover {
+    background-color: #f7b733;
+    color: #000;
+    transition: all .5s;
+
+}
+
+.menu-bar {
+    display: none;
+}
+
+/* MAIN SECTION */
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content-info {
+    margin-top: 5em;
+    color: #fff;
+}
+
+button {
+    cursor: pointer;
+    color: #fff;
+    box-shadow: 0px 3px 14px -8px rgba(0,0,0,.78);
+}
+
+button:hover{
+    box-shadow: none;
+
+}
+
+.btn-toBuy, .read-more{
+    background-color: #ca4172;
+    padding: 8px 40px;
+    font-size: 1.2em;
+    border-radius: 20px;
+    border: none;
+    
+}
+
+.read-more{
+    background: none;
+    border: 1px solid #fff;
+    margin: 20px;
+}
+
+.main img{
+    margin-top:50px;
+}
